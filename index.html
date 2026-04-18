@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronosticador Superclásico</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="img/logo.png" alt="Logo" class="main-logo">
+            <h1>Pronosticador</h1>
+            <p>Dejanos tu resultado para el Superclásico</p>
+        </header>
+
+        <form id="predictionForm">
+            <div class="match-container">
+                <div class="team">
+                    <img src="img/Condesa_River.png" alt="River">
+                    <input type="number" name="golesRiver" placeholder="0" min="0" required>
+                </div>
+                <div class="separator">-</div>
+                <div class="team">
+                    <img src="img/Condesa_Boca.png" alt="Boca">
+                    <input type="number" name="golesBoca" placeholder="0" min="0" required>
+                </div>
+            </div>
+
+            <div class="user-data">
+                <input type="text" name="nombre" placeholder="Nombre Completo" required>
+                <input type="tel" name="tel" placeholder="Teléfono (ej: 1122334455)" required>
+                <input type="text" name="ig" placeholder="Usuario de Instagram (sin @)" required>
+            </div>
+
+            <button type="submit" id="submitBtn">Enviar Pronóstico</button>
+        </form>
+        <div id="message" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
